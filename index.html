@@ -5,101 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, css, tags">
-    <meta name="description" content="Обучаюсь HTML">
+    <meta name="description"
+    content="Обучаюсь HTML">
     <title>Learning</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <h1>Денис</h1>
+    <h2 class="anim">Hello World</h1>
+    <h1 class="name">Денис</h1>
 
-    <p><strong>Я долбаеб</strong> который <del>не закончил</del> <em>изичную</em> вышку и теперь <strong>въёбываю</strong> на картонном заводе. <strong><em>РЖД ГОВНО</em></strong></p>
+    <div class="header">
+        <p>Я долбаеб который не закончил изичную вышку и теперь въёбываю на картонном заводе.</p> 
+    </div>
+
+    <div class="card1">
+        <p>Хочу заработать лямчик и вырастить куст</p>
+    </div>
+
+    <div class="btn">
+         <a href="https://vk.com/den1s_simonov" target="_blank">
+            <img src="css/icon/vk.jpg">
+        </a>
+    </div>
+
+    <div class="btn">
+        <a href="#" target="_blank">
+            <img src="css/icon/facebook.jpg" alt="facebook">
+        </a>
+    </div>
     
-    <hr>
+    <div class="btn">
+        <a href="#" target="_blank">
+            <img src="css/icon/g+.jpg" alt="facebook">
+        </a>
+    </div>
 
-    <p>Хочу заработать <em>лямчик</em> и вырастить <strong>куст</strong></p>
-    <a href="https://vk.com/den1s_simonov" target="_blank">BK</a><br>
+    <div class="btn">
+        <a href="#" target="_blank">
+            <img src="css/icon/twitter.jpg" alt="facebook">
+        </a>
+    </div>
 
-    <br>
+    <div class="btn">
+        <a href="#" target="_blank">
+            <img src="css/icon/facebook.jpg" alt="facebook">
+        </a>
+    </div>
     
-    <img src="ava.jpg" width="150">
-    
-    <hr>
+    <div style="clear: left; margin-left: 10px;">
+        <img class="photo" src="ava.jpg">
+    </div>
+    <div class="card2">
+        <h1>My Hobby</h1>
+            <ol>
+                <li>Задрить</li>
+                <li>Смоук weed</li>
+                <li>Спать</li>
+            </ol>
+    </div>
+    <div class="card3">
+        <h1>Опыт работы</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Стаж</th>
+                    </tr>
+                    <tr>
+                        <td>ФПК</td>
+                        <td>Проводник пассажирского поезда</td>
+                        <td>2 месяца</td>
+                    </tr>
+                    <tr>
+                        <td>McDonald's</td>
+                        <td>Работник ресторана</td>
+                        <td>2 месяца</td>
+                    </tr>
+                    <tr>
+                        <td>РЖД ПМС-168</td>
+                        <td>Путеец</td>
+                        <td>2 месяца</td>
+                    </tr>
+                    <tr>
+                        <td>РЖД ВЧДЭ-17</td>
+                        <td>Слесарь по ремонту подвижного состава</td>
+                        <td> 1 год</td>
+                    </tr>
+                    <tr>
+                        <td>ООО Уралбумага "ПЦБК"</td>
+                        <td>Машинист ПВА 4 разряда</td>
+                        <td>7+ мес.</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+    </div>
+    <div class="card4">    
+        <h1>Связь</h1>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input class="svyaz" type="text" id="name" placeholder="Ваше имя">
+                </div>
 
-    <h1>Мои хобби</h1>
-        <ol>
-            <li>Задрить</li>
-            <li>Смоук weed</li>
-            <li>Спать</li>
-        </ol>
-    <h1>Опыт работы</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Стаж</th>
-                </tr>
-                <tr>
-                    <td>ФПК</td>
-                    <td>Проводник пассажирского поезда</td>
-                    <td>2 месяца</td>
-                </tr>
-                <tr>
-                    <td>McDonald's</td>
-                    <td>Работник ресторана</td>
-                    <td>2 месяца</td>
-                </tr>
-                <tr>
-                    <td>РЖД ПМС-168</td>
-                    <td>Путеец</td>
-                    <td>2 месяца</td>
-                </tr>
-                <tr>
-                    <td>РЖД ВЧДЭ-17</td>
-                    <td>Слесарь по ремонту подвижного состава</td>
-                    <td> 1 год</td>
-                </tr>
-                <tr>
-                    <td>ООО Уралбумага "ПЦБК"</td>
-                    <td>Машинист ПВА 4 разряда</td>
-                    <td>7+ мес.</td>
-                </tr>
-            </thead>
-            <tbody>
+                <div>
+                    <label for="mail">email</label>
+                    <input class="svyaz" type="email" id="mail" placeholder="Введите почту">
+                </div>
+
+                <div>
+                    <label for="sex">Ваш пол</label>
+                    <select class="svyaz" id="sex">   
+                        <option value="other">Другое</option>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Сообщение</label>
+                    <br>
+                    <textarea class="svyaz" id="message" cols="25" rows="10" placeholder="Введите текст"></textarea>
+                </div>
                 
-            </tbody>
-        </table>
-    <h1>Связь</h1>
-        <form>
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Ваше имя">
-            </div>
-
-            <div>
-                <label for="mail">email</label>
-                <input type="email" id="mail" placeholder="Введите почту">
-            </div>
-
-            <div>
-                <label for="sex">Ваш пол</label>
-                <select id="sex">   
-                    <option value="other">Другое</option>
-                    <option value="male">Мужской</option>
-                    <option value="female">Женский</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="message">Сообщение</label>
-                <br>
-                <textarea id="message" cols="25" rows="10" placeholder="Введите текст"></textarea>
-            </div>
-            
-            <div>
-                <button type="submit">Отправить</button>
-            </div>
-        </form>
-        
+                <div>
+                    <button class="svyaz" type="submit">Отправить</button>
+                </div>
+            </form>
+    </div>
 </body>
 </html>
